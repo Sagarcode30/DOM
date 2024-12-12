@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+#navbar{
+ height: 50px;
+ width: 100%;
+ background-color: black;
+ position: fixed;
+ top: 0;
+
+}
+#navbar ul{
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap:55px;
+    list-style: none;
+    padding: 10px;
+   }
+   #navbar ul a{
+    text-decoration: none;
+    color: white;
+    padding:10px;
+    font-size: 20px;
+   }
+   #navbar ul a:hover{
+   background-color: #c42727;
+   }
+#welcome-section{
+    height: 600px;
+    margin-top: 50px;
+background: linear-gradient(270deg,gray, rgb(1, 44, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#welcome-section h1{
+    
+   font-size: 42px;
+   padding: 16px;
+   
+}
+#welcome-section p{
+    font-size: 25px;
+    color: rgb(172, 11, 11);
+    font-style: italic;
+    font-weight: bold;
+}
+
+#projects{
+    height: 1000px;
+    background-color: rgb(235, 181, 235);
+    text-align: center; 
+}
+#projects h1{   
+    font-size: 42px;
+    padding-top: 50px;
+ }
+ #contact{
+    height: 300px;
+    background-color: rgb(158, 163, 162);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+ }
+ #contact h2{
+    text-align: center;
+    font-size: 50px;
+   
+ }
+#contact p{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+ .social-link ul{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+ }
+ .social-link ul a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+ }
+
+ .social-link ul a:hover{
+    color: black;
+transform: scale(2px);
+    transition: all;
+ }
+ #foot{
+    height: 70px;
+    display: flex;
+    gap: 90px;
+    justify-content: flex-end;
+   
+   align-items: center;
+border-bottom: 3px solid red;
+ }
+ .left{
+
+    font-size: 20px;
+    text-align: center;
+ }
+ .left::before{
+    content: "**";
+ }
+.side{
+    
+    font-size: 20px;
+    text-align: center;
+    padding-right: 15px;
+}
+.project-tile{
+   height: 100%;
+   padding: 40px;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+ gap: 20px;
+
+}
+.card{
+border: 2px solid black;
+height: 350px;
+width: 25%;
+flex-direction: column;
+}

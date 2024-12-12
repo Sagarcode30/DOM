@@ -1,0 +1,52 @@
+*{
+    margin: 0;padding: 0;
+}
+.nav {
+    /* background-color: red; */
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    box-shadow: 0 5px 4px #0000001a;
+   
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    align-items: center;
+}
+span{
+    font-size: 30px;
+    font-weight: 500;
+}
+button{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px
+    
+}
+label{
+    font-size: 23px;
+}
+input{
+    padding: 5px;
+}
+
+.resett button{
+    height: 30px;
+    width: 70px;
+}
