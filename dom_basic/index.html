@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .div{
+        height: 200px;width: 200px;
+        background-color: red;
+    }
+    
+    .active{
+    background-color: antiquewhite;
+    }</style>
+    <title>Document</title>
+  '  <!-- <style>
+        *{
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center
+            ;
+            align-items: center;
+        }
+    </style>' -->
+    
+</head>
+<body>
+    <h1>Challanges for Practiceing DOM </h1>
+
+    <!--   1. Change Text Content
+       Question One-Create a webpage with a paragraph element (<p>). Add a button below it. When the button is clicked, the text inside the paragraph should change to "Hello, World!" using JavaScript. 
+        
+        2. Change Style
+Question:
+On a webpage, add a button that changes the background color of the page to a random color each time it's clicked. Write JavaScript to generate a random color and apply it to the body
+
+
+
+3. Add and Remove Elements
+Question:
+Create an unordered list (<ul>) on your page. Add an "Add Item" button, which appends a new list item (<li>) to the list each time it is clicked. Also, create a "Remove Item" button to remove the last list item when clicked.
+
+
+
+Here are the questions based on the challenges I listed above. You can work on them one by one:
+
+1. Change Text Content
+Question:
+Create a webpage with a paragraph element (<p>). Add a button below it. When the button is clicked, the text inside the paragraph should change to "Hello, World!" using JavaScript.
+
+2. Change Style
+Question:
+On a webpage, add a button that changes the background color of the page to a random color each time it's clicked. Write JavaScript to generate a random color and apply it to the body.
+
+3. Add and Remove Elements
+Question:
+Create an unordered list (<ul>) on your page. Add an "Add Item" button, which appends a new list item (<li>) to the list each time it is clicked. Also, create a "Remove Item" button to remove the last list item when clicked.
+
+4. Change Image Source
+Question:
+Add an image (<img>) to your webpage. Below it, add a button that changes the src attribute of the image to a new image URL each time it's clicked. Use JavaScript to modify the image source.
+
+5. Toggle Class
+Question:
+Add a div element on the page. Below it, place a button. When the button is clicked, toggle a class (e.g., .active) on the div element. Use the class to change the background color of the div (e.g., change it to red when the class is added, and back to white when removed).
+
+
+
+.-->
+
+        <p id="textparagraph">This Text is converted or changed into HEllo World When button is clicked</p>
+        <button type="button" id="clickbutton">Click Me</button>
+
+        <!-- Button to Chnage the color of Background -->
+         <div class="color"> <button id="Changecolor">Change</button>
+        </div>
+
+       
+        <div class="append">
+
+            <ul id="itemlist">
+                <li>sagar</li>
+            <li>shanu</li>           
+                <li>aniket</li>
+            </ul>
+            <button id="additem">Add</button>
+            <button id="removeitem">Remove</button>
+        </div>
+        <div class="image">
+            <img src="https://imgs.search.brave.com/FtJ0f51iAzqo8bsJVqsJNiiH-LgnTHdYXOomJwCmL9w/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/YS1kcm9wLW9mLXBp/bmstYW5kLXllbGxv/dy1wYWludC1pbi13/YXRlci5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" id ="images">
+            <button id="changesrc">Change</button>
+        </div>
+
+
+        <div class="div" >
+
+        </div>
+        <button id="toggle">Toggle</button>
+    <script src="script.js"></script>
+</body>
+</html>
