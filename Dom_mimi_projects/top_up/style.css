@@ -1,0 +1,76 @@
+*{
+    margin: 0;padding: 0;
+}.container{
+    max-width: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+h1{
+    text-align: center;
+}
+
+select,input,button,label,p{
+    font-size: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+select{
+    padding: 6px;
+    border-radius: 5px;
+    outline: none;
+
+}
+.range-container{
+    display: flex;align-items: center;
+    gap: 5px;
+}
+
+input{
+   
+    padding: 6px;
+    /* border: none; */
+    border: 1px solid black;
+    border-radius: 5px;
+}
+button{
+    padding: 10px;
+    background-color: #a2e321;
+    border:none;
+    border-radius: 5px;
+
+}
+.toast-container{
+    position: absolute;
+   top: 1rem;
+   left: 1rem;
+    margin: 15px;
+    display: flex;
+
+
+}
+.toast-container.right{
+    left: auto;
+    right: 1rem;
+}
+.toast-container.bottom{ 
+    top: auto;
+    bottom: 1rem;
+}
+   
+.toast {
+    background-color: green;
+    color: aliceblue;
+    width: 100%;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 6px;
+
+
+}
+
+   
+ 
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill_Spiltter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="input-container">
+            <label for="bill-input">Bill </label>
+
+
+            <div class="box">
+                <span>₹</span> 
+                 <input type=" number" id="bill-input"  autocomplete="off">
+              
+            </div>
+            
+           
+    
+            <label for="select-label">Select Tip</label>
+            
+            <div class="button-container">
+            <button class="tip-btn">5%</button>
+            <button class="tip-btn">10%</button>
+            <button class="tip-btn">15%</button>
+            <button class="tip-btn">20%</button>
+            <button class="tip-btn">30%</button>
+            <button class="tip-btn">50%</button>
+            </div>
+            
+    
+            <input type="text" placeholder="Custom Tip" id="tip-input" autocomplete="off">
+            <label for="Number of People">Number of People</label>
+            <input  type="number" name="" id="split-input" placeholder="No of People" autocomplete="off">
+            <button type="submit" class="generate-btn">Generate Bill</button>
+    
+        </div>
+
+        <div class="output-container">
+            <div class="inside">
+            <p>Tip Amount<span class="tip"></span></p>
+            <p> Total<span class="total"></span></p>
+            <p> Each Person Bill<span class="number-person"></span></p>
+            </div>
+            
+    
+            <button type="reset" disabled class="reset">Reset</button>
+    
+        </div>
+    </main>
+   <script src="script.js"></script>
+</body>
+</html>
