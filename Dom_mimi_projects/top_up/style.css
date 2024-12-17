@@ -71,17 +71,18 @@ button{
     text-align: center;
     border-radius: 6px;
     animation: from_left 0.3s ease-in;
-
 }
-
+.toast-container.right.toast.to_right{
+    animation: from_right 0.3s ease-in;
+}
 .toast.to_left
 {
 animation: to_left 0.3s ease-in forwards;
 }
-/* .bottom.toast.to_right
+.toast-container.right.toast.to_right
 {
 animation: to_right 0.3s ease-in forwards;
-} */
+}
 
 
 @keyframes from_left {

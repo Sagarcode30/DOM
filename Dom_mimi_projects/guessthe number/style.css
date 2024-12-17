@@ -1,0 +1,38 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.container{
+    max-width: 900px;
+    padding: 20px;
+    margin: 30px auto;
+    height: 300px;
+   
+    text-align: center;
+}
+p{
+    font-size: 23px;
+}
+form{
+    padding: 20px;
+}
+input{
+    width: 50%;
+    padding: 10px;
+    outline: none;
+}
+.button{
+    padding: 20px 10px;
+}
+button{
+   margin-right: 20px;
+   background-color: aqua;
+   border: none;
+   border-radius: 6px;
+   padding: 10px 25px;
+}
+#guessnumber{
+    padding: 10px;
+    
+    font-size: 22px;
+}
