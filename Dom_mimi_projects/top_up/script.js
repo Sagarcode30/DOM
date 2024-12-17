@@ -3,34 +3,66 @@ const verticalside=document.querySelector('#vertical-side')
 const horizontalside=document.querySelector('#horizontal-side')
 const meassgeside=document.querySelector('#mesage-type')
 const toastcontainer=document.querySelector('.toast-container')
+const messagetype=document.querySelector('#message-type')
+const message=document.querySelector('#message')
+const duratrion =document.querySelector('#duration')
+
+
+
 
 showtoast.addEventListener('click',()=>{
-
-    const newtoast=document.createElement('p')
-    newtoast.innerHTML='this is topup'
-
-    console.log(newtoasts)
-    toastcontainer.append(toasts).classList.add('toast')
-    if(horizontalside.value==='right')
-        {
-            toastcontainer.classList.add('right')
-    }
-    else {
-        toastcontainer.classList.remove('right')
-    }
-    if(verticalside.value==='bottom')
-        {
-            toastcontainer.classList.add('bottom')
-    }
-    else {
-        toastcontainer.classList.remove('bottom')
-    }
-
-
     
+if(horizontalside.value==='right')
+    {
+        toastcontainer.classList.add('right')
+}
+else {
+    toastcontainer.classList.remove('right')
+}
+if(verticalside.value==='bottom')
+    {
+        toastcontainer.classList.add('bottom')
+}
+else {
+    toastcontainer.classList.remove('bottom')
+}
+
+const newtoast =document.createElement('div')
+newtoast.classList.add('toast')
+newtoast.classList.add(messagetype.value)
+newtoast.innerHTML=`${message.value} `
+toastcontainer.append(newtoast);
+
+const closeIcon=document.createElement('span')
+closeIcon.innerHTML=`X`    
+closeIcon.classList.add('close')
+newtoast.append(closeIcon)
+
+function removetoast(){
+    newtoast.classList.add('to_left')
+    setTimeout(() => {
+        newtoast.remove()
+        
+    }, 300);
+}
+
+closeIcon.addEventListener('click' ,()=>{   
+removetoast()
+})
 
 
-    // console.log(verticalside.value);
-    // console.log(horizontalside.value);
+setTimeout(() => {
+    removetoast()
+    
+}, parseInt(duratrion.value)*1000);
+
+
 
 })
+
+   
+   
+  
+
+   
+

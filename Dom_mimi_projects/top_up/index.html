@@ -15,32 +15,35 @@
             <option value="left">Left</option>
             <option value="right">Right</option>
         </select>
+
+
         <select name="" id="vertical-side">
-            <option value="bottom">Bottom</option>
             <option value="up">UP</option>
+            <option value="bottom">Bottom</option>
         </select>
+
+
         <select name="" id="message-type">
             <option value="warning">Warning</option>
             <option value="info">Info</option>
             <option value="success">Success</option>
             <option value="error">Error</option>
         </select>
-        <input type="text" id="message" value="Hello Sagar">
+
+        <input type="text" id="message" value="This is a Toast Message" autocomplete="off">
 
 
         <div class="range-container">
             <label for="duration">Duration  </label>
-<input type="range" name="" id="duration">
+            <input type="range"  id="duration" value=3 max=10 min="1">
         </div>
-
-       
 
         <button type="submit" id="show-toast">Show Toast</button>
        
     </div>
 
     <div class="toast-container ">
-        <p class="toast">this a toast</p>
+        
     </div>
     <script src="script.js"></script>
 </body>
