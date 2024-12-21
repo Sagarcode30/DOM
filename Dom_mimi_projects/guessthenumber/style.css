@@ -26,6 +26,7 @@ input{
 }
 button{
    margin-right: 20px;
+    cursor: pointer;
    background-color: aqua;
    border: none;
    border-radius: 6px;
@@ -35,4 +36,7 @@ button{
     padding: 10px;
     
     font-size: 22px;
+}
+button:disabled{
+    cursor: not-allowed;
 }

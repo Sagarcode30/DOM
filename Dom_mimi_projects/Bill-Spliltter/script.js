@@ -10,10 +10,11 @@ const generatebtn=document.querySelector('.generate-btn')
 
 let tipPercentage=0
 
+
 generatebtn.addEventListener('click',()=>{
 
-   
-    
+  
+
    const billamount=parseInt(billinput.value);
    const numberofperson=parseInt(splitinput.value);
   

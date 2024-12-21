@@ -20,6 +20,15 @@
 // }
 
 // const sum= 5>3 ? 'true':'false'
+// 
+// const data=prompt('enter your gender')
+// let gender = data==='female'? console.log("user is feamale"):console.log("user is male")
 
-const data=prompt('enter your gender')
-let gender = data==='female'? console.log("user is feamale"):console.log("user is male")
+
+
+// button click alert
+
+const button=document.querySelector('button')
+
+button.addEventListener('click', console.log("clicked")
+)
