@@ -9,6 +9,7 @@ const papericon=' 🖐️ '
 const scissoricon=' ✌️'
 const userscore=document.querySelector('.user-score')
 const compscore=document.querySelector('.computer-score')
+const reset= document.querySelector('#reset')
 
 
 
@@ -32,12 +33,12 @@ setTimeout(()=>{
     const computerchoice=Math.floor(Math.random()*3);
     comphand.innerHTML=iconlist[computerchoice]
     if(comphand.innerHTML===rockicon){
-        result.innerHTML='Draw'
+        result.innerHTML='Draw!!'
     }else if(comphand.innerHTML===papericon){
-        result.innerHTML='computer won'
+        result.innerHTML='Computer Win!!'
         compscore.innerHTML=parseInt(compscore.innerHTML)+1
     }else{
-        result.innerHTML="You win"
+        result.innerHTML="You Win"
         userscore.innerHTML=parseInt(userscore.innerHTML)+1
     }
 },1000
@@ -58,12 +59,12 @@ setTimeout(()=>{
     const computerchoice=Math.floor(Math.random()*3);
     comphand.innerHTML=iconlist[computerchoice]
     if(comphand.innerHTML===papericon){
-        result.innerHTML='Draw'
+        result.innerHTML='Draw!!'
     }else if(comphand.innerHTML===scissoricon){
-        result.innerHTML='computer won'
+        result.innerHTML='Computer Win!!'
         compscore.innerHTML=parseInt(compscore.innerHTML)+1
     }else{
-        result.innerHTML="You win"
+        result.innerHTML="You win!!"
         userscore.innerHTML=parseInt(userscore.innerHTML)+1
     }
 
@@ -85,15 +86,20 @@ setTimeout(()=>{
     const computerchoice=Math.floor(Math.random()*3);
     comphand.innerHTML=iconlist[computerchoice]
     if(comphand.innerHTML===scissoricon){
-        result.innerHTML='Draw'
+        result.innerHTML='Draw!!'
     }else if(comphand.innerHTML===papericon){
-        result.innerHTML='You Win'
+        result.innerHTML='You Win!!'
         userscore.innerHTML=parseInt(userscore.innerHTML)+1
     }else{
-        result.innerHTML="Computer win"
+        result.innerHTML="Computer Win!!"
         compscore.innerHTML=parseInt(compscore.innerHTML)+1
     }
 
 },1000
 )
+})
+reset.addEventListener('click',()=>{
+    result.innerHTML=''
+    userscore.innerHTML=0
+    compscore.innerHTML=0
 })
