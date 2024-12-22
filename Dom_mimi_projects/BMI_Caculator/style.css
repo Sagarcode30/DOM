@@ -1,0 +1,97 @@
+*{
+    margin: 0;padding: 0;color: white;
+}
+body{
+    overflow: hidden;
+    background-image: url(./edgar-chaparro-sHfo3WOgGTU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    max-width: 500px;
+    margin: 200px auto;
+    padding: 20px;
+    text-align: center;
+    height: 400px;
+    box-shadow: 0 0 10px 2px;
+}
+h1{
+    padding: 20px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    text-align: start;
+}
+input{
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    color: black;
+     outline: none;
+}
+label{
+    font-size: 20px;
+    margin-top: 15px;
+ 
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.calculate{
+    padding: 12px 8px;
+    border-radius: 6px;
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+.calculate:hover{
+    background-color: rgb(7, 88, 121);
+}
+.reset{
+    padding: 12px 8px;
+    border-radius: 6px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(6, 122, 64);
+    color: white;
+}
+.reset:hover{
+    background-color: rgb(4, 87, 15);
+}
+p{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(236, 231, 231);
+}
+
+@media( max-width:650px){
+body{
+    background-position: center;
+}
+    .container{
+        max-width:300px;
+    }
+    input{
+        font-size: 16px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
